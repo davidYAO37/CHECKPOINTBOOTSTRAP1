@@ -1,0 +1,78 @@
+/* la premiere classe a creer en css et s'applique sur toutes les pages */
+* {
+  margin: 0; /* enleve toutes les marges */
+  padding: 0; /* enleve tous les espaces entre les marges */
+}
+.bairest{
+  
+  font-family: 'Cambo', serif;
+  font-size: 3em ;
+}
+.navbar{
+  display: flex;
+  height: 5rem;
+  background-color: #ff0000;
+}
+
+
+.logoentete :hover{
+  color: rgb(24, 22, 22);
+}
+
+.hero {
+  display: flex; /*on aligne les éléménts horizontalement */
+  align-items: center; /* positionne les éléments au centre de la section */
+  width: 100%; /* occupe la largeur de l'écran */
+  height: 85vh; /* on donne la hauteur de la section à 50vh */
+  background:  url(/images/banner.jpg); /*linear-gradient permet de donner une couleur dégrader à un élément. ici on assombri un peu notre image qui est en arriere plan*/
+  background-position: center; /* on position l'arriere plan au centre de la section */
+  background-size: cover; /*on oblige à prendre toute la dimension de la section */
+  background-repeat: no-repeat; /*ici on empeche que l'image se repète */
+}
+
+.surimage{
+  height: 10rem;
+  width:40rem;
+  color: aliceblue;
+  background-color: #84754e;
+
+}
+#menu{
+  
+display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.container h1 p{
+  width: 38rem;
+  text-align: center;  
+}
+.maliste{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:0 30px;
+ 
+}
+form {
+  display: block;
+  margin-top: 0em;
+  unicode-bidi: isolate;
+  align-items: center;
+  justify-items: center;
+}
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Centre horizontalement en colonne */
+  gap: 15px;
+}
+#main-footer{
+  display: block;
+  color: azure;
+  height: 15rem;
+  text-align: center;
+  justify-content: center;
+}

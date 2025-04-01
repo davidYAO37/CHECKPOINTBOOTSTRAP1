@@ -3,239 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
-     <link rel="stylesheet" href="css/style.css">
+    <title>Boutique en Ligne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg text-center">
-    <div class="container-fluid">
-      <div class="text-white px-lg-5  bairest">
-        <h1>BabiResto</h1>
-      </div>
-      <!-- Les awesomes -->
-      <div class=" fs-2 logoentete">
-        <a href="#" title="Visiter google"> <i class="fa-brands fa-google"></i></a>
-       <a href="#" title="Visiter Facebook"><i class="fa-brands fa-facebook"></i></a>        
-      </div>
-      <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item text-white">
-            <a class="nav-link active" href="#Accueil">Acceuil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#menu">Menus</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Aprospos">A propos de nous</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="#Contact" >Contacter-nous</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Section hero -->
-  <section class="hero align-items-end justify-content-center">
-    <div class="surimage text-center align-content-center p-4">
-      <h1>A partir de 2500Fcfa!</h1>
-      <h2 class="px-0 py-0 small">Des repas cuisinés avec passion et livrés chez vous!</h2>
-    </div>
-  </section>
+<body class="bg-gray-100">
+    <!-- En-tête -->
+    <header class="bg-white shadow-md p-4 md:p-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-800">Fashion Star</h1>
+        <nav>
+            <ul class="flex space-x-4 text-gray-600">
+                <li><a href="#home" class="hover:text-gray-900">Accueil</a></li>
+                <li><a href="#products" class="hover:text-gray-900">Produits</a></li>
+                <li><a href="#contact" class="hover:text-gray-900">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Section les menus et tarifs -->
-
-  <section id="menu" class="my-5 py-5 align-items-center">
-      <div class="container" style="width: 38rem;">
-        <div class="row" style="text-align: center; font-family: 'Cambo', serif;">
-          <h1 class="text-danger ">Ménu et tarifs</h1>   
-          <p>BABIRESTO est un restaurant 100% en ligne à Abidjan.Notre concept de restauration rapide en ligne permet à nos clients de commander simplement à partir du menu. 
-          La livraison est faite le plutôt possible. N'ayant pas de clients à servir sur place, votre commande est prise en charge plus rapidement. 
-          Commandez maintenant.</p>        
-        </div> 
-        
-      </div>
-  </section>
-  
-  
-  
-  <section>
-    <div class="container maliste">
-      <!-- Items 1 -->
-      <div class="card  border-0" style="width: 23rem;">
-        <img src="Images/a1.jpg" class="card-img-top" alt="...">
-        <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-          <h5 class="card-title">Poulet et frites aux légumes</h5>
-          <p class="card-text small">Poulet, frites de pomme de terre, salade, moutarde, ketch up, pain. Prix: 3000f.</p>
-          <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
+    <!-- Section Produits -->
+    <section id="products" class="container mx-auto my-10 p-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Passer vos commandes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Fiche produit -->
+            <div class="bg-white p-4 shadow-md rounded-lg text-center">
+                <img src="Images/rose.jpg" alt="Produit" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Fashion Star</h3>
+                <p class="text-gray-600">Boléro Femme Cardigan Court à Nouer Devant Devant Manche Courte.</p>
+                <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded">Acheter maintenant</button>
+            </div>
+            <!-- Répéter pour d'autres produits -->
+            <div class="bg-white p-4 shadow-md rounded-lg text-center">
+                <img src="Images/robenoire.jpg" alt="Produit" class="mx-auto mb-4">
+                
+ -
+                <h3 class="text-xl font-semibold">Fashion Star</h3>
+                <p class="text-gray-600">Be Jealous Damen Glitter Strasssteinchen Blumen Rosen.</p>
+                <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded">Acheter maintenant</button>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg text-center">
+                <img src="Images/robe.jpg" alt="Produit" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Fashion Star</h3>
+                <p class="text-gray-600">Be Jealous Enfant Balançoire Rosse Fille Noël Évasé Franki Père Noël.</p>
+                <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded">Acheter maintenant</button>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg text-center">
+                <img src="Images/tes.jpg" alt="Produit" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Fashion Star</h3>
+                <p class="text-gray-600">Be Jealous Nouveau Femme Jersey Cardigan Emballant Bolero Manches.</p>
+                <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded">Acheter maintenant</button>
+            </div>
         </div>
-      </div>
-      
-      
-     
-        <!-- Items 2 -->
-        <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a2.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Poulet aux petits pois et carotte</h5>
-            <p class="card-text small"> Poulet, portion de petits pois et carotte étoffés avec du pain. Prix: 3000f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-        
-        
-          <!-- Items 3 -->
-      <div class="card  border-0" style="width: 23rem;">
-        <img src="Images/a3.jpg" class="card-img-top" alt="...">
-        <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-          <h5 class="card-title">Spaghetti au poulet sauce tomate</h5>
-          <p class="card-text small">Spaghetti au poulet frit. Sauce de tomate avec une portion de pain. Prix: 2500f..</p>
-          <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-        </div>
-      </div>
-      
+    </section>
 
-        <!-- Items 4-->
-        <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a4.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Ragout de pomme au poulet</h5>
-            <p class="card-text small">Ragout de pomme de terre au poulet frit avec + portion de pain. Prix: 3000f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-   
-
-
-         <!-- Items 5 -->
-         <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a5.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Ragout de pomme au boeuf</h5>
-            <p class="card-text small">Ragout de pomme de terre avec carré de boeuf + portion de pain. Prix: 3000f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-       
-        
-         <!-- Items 6 -->
-         <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a6.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title"> Alloco carrés de boeuf</h5>
-            <p class="card-text small">Friture de plantain avec carrés de boeuf épicés + portion de pain. Prix: 3000f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-        
-        
-         <!-- Items 7 -->
-         <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a7.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Gouagouassou avec poulet</h5>
-            <p class="card-text small">Sauce Gouagouassou au poulet + accompagnement foutou ou riz. Prix: 4000f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-        
-
-        <!-- Items 8 -->
-         <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a8.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Spaghettis au poulet et légumes</h5>
-            <p class="card-text small">Spaghettis au poulet et légumes tomate, carottes + portion de pain. Prix: 3000f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-         <!-- Items 8 -->
-         <div class="card border-0" style="width: 23rem;">
-          <img src="Images/goua.jfif" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Gouagouassou avec poisson</h5>
-            <p class="card-text small">Sauce Gouagouassou au Poisson fumé + accompagnement foutou ou riz. Prix: 3500f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-        
-        
-         <!-- Items 90 -->
-         <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a90.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Sauce graine au crabe et poisson</h5>
-            <p class="card-text small">Sauce graine avec poisson thon fumé et crabe + foutou ou riz. Prix: 4500f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-        </div>
-        
-
-         <!-- Items 91 -->
-         <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a91.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title">Sauce pistache avec poulet</h5>
-            <p class="card-text small">Sauce pistache au poulet avec accompagnement foutou ou riz. Prix: 4500f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-         </div>
-        
-
-         <!-- Items 92 -->
-         <div class="card  border-0" style="width: 23rem;">
-          <img src="Images/a92.jpg" class="card-img-top" alt="...">
-          <div class="card-body  text-center align-content-center p-4" style=" color: rgba(230, 237, 243, 0.877); background-color: #84754e;">
-            <h5 class="card-title"> Kédjénou de poulet</h5>
-            <p class="card-text small">Poulet, frites de pomme de terre, salade, moutarde, ketch up, pain. Prix: 3000f.</p>
-            <a href="#" class="btn text-success-emphasis m-0 p-0 fw-bold">Commandez</a>
-          </div>
-         </div>
-
-        
-    </div>
-  </section>
-
-   <section  class="my-5 py-5 align-items-center" id="Aprospos">
-      <div class="row" style="text-align: center; font-family: 'Cambo', serif;">
-        <h1 class="text-danger ">A propos de nous</h1>   
-        <p> BabiResto.com - Restaurant en ligne avec service de livraison de repas à domicile.<br> Une équipe de passionnés avec l'ambition de faire de cette plateforme <br> une référence du concept de restaurant en ligne en Côte d'Ivoire.</p>        
-      </div> 
-</section>
-
-<div class="container-fluid bg-secondary-subtle" style="height: 25rem;">
-  <div class="d-flex align-items-center justify-content-center" style="padding-left: 15em;">
-    <img src="Images/tes.jpg" alt="test"  style="border-radius: 20rem;" >   
-    <div class="mx-5">
-      <h1> Témoignage d'une cliente satisfaite</h1>
-      <p style="width: 45rem ; color: #84754e;">Dépuis pratiquement 06 mois maintenant je me fais livrer régulièrement des repas par Babiresto.com/. A ma descente du boulot, pas le temps de préparer ou de ressortir pour manger. Un coup de fil et hops, en moins d'une heure, le livreur est là avec le plat de mon choix! En plus c'est tout chaud et bien conditionné. J'ai même recommandé Babiresto.com à des amis qui ont également apprécié! Bonne contuniation! Mlle Merhy Josiane K. - A Marcory Residentiel</p>
-    </div> 
-  </div>
-  
-</div>
-<section  class="my-5 py-5 align-items-center" id="Contact">
-  <div class="row" style="text-align: center; font-family: 'Cambo', serif;">
-    <h1 class="text-danger ">Contacts et Infos</h1>   
-    <p> BABIRESTO.COM Restaurant 100% en ligne Livraison de repas à Abidjan. <br>Ménu personnalisé ou une livraison en entreprise? Contactez-nous.
-      
-      <br>Cellulaire: +225 0584012525<br>Cellulaire: +225 0747776103<br>WhatsApp: +2250584012525<br>E-mail: contact@babiresto.com</p>        
-  </div> 
-  <form class="my-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-
-
-
-<footer id="main-footer" class="site-footer bg-black" role="contentinfo">
-  <p>&copy; 2025 MonSite. Tous droits réservés.</p>
-</footer>
-
-
-   <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <!-- Pied de page -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+        <p>&copy; 2025 Boutique Mode. Tous droits réservés. <br>Tel:(+225) 05 655 510 80</p>
+    </footer>
 </body>
 </html>
